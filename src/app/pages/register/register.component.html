@@ -1,0 +1,29 @@
+<section class="w-1/2 mx-auto bg-gray-50 p-4 rounded border-2 shadow">
+    <h1 class="text-3xl font-light text-center text-green-600">register Now</h1>
+    <form [formGroup]="register" (ngSubmit)="submitForm()" class="p-5">
+        <div class="mb-1">
+            <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">name</label>
+            <input formControlName="name" type="name" id="default-input" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+       
+        <div class="mb-1">
+            <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">email</label>
+            <input formControlName="email" type="email" id="default-input" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+    
+        <div class="mb-1">
+            <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">pasword</label>
+            <input formControlName="password" type="password" id="default-input" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="mb-1">
+            <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">repassword</label>
+            <input formControlName="rePassword" type="repassword" id="default-input" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+    
+        <div class="mb-1">
+            <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">phone</label>
+            <input formControlName="phone" type="tel" id="default-input" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <button  type="submit" class="btn-main">signUp</button>
+    </form>
+</section>
