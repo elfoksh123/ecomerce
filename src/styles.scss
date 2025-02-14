@@ -2,7 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 .btn-main{
     @apply bg-green-600 text-white px-10 py-2 border rounded hover:bg-green-800 transition-colors duration-500
 }
